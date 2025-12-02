@@ -1,0 +1,172 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Inner Page - Regna Bootstrap Template</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Poppins:300,400,500,700" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="vendor/aos/aos.css" rel="stylesheet">
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/form.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Regna
+  * Updated: Sep 18 2023 with Bootstrap v5.3.2
+  * Template URL: https://bootstrapmade.com/regna-bootstrap-onepage-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center ">
+    <div class="container d-flex justify-content-between align-items-center">
+
+      <div id="logo">
+        <a href="index.html"><img src="assets/img/logo.png" alt=""></a>
+        <!-- Uncomment below if you prefer to use a text logo -->
+        <!--<h1><a href="index.html">Regna</a></h1>-->
+      </div>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto" href="iniciarsesion.html">Iniciar Sesion</a></li>
+          <li><a class="nav-link scrollto active" >Registrarse</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs Section ======= -->
+    <section class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>Recuperacion</h2>
+          <ol>
+            <li><a href="index.html">Pagina Principal</a></li>
+            <li>Iniciar Sesion</li>
+            <li>Recuperacion de contraseña</li>
+          </ol>
+        </div>
+
+      </div>
+    </section><!-- End Breadcrumbs Section -->
+
+    <section class="inner-page">
+      <div class="container" data-aos="fade-up">
+         <div class="section-header">
+
+             <div class="login">
+              <h3 class="titulo">Ingrese Su Email</h3> <br>
+              <center>
+              <h5 class="titulo">Correo enviado, porfavor verifique su correo</h5> <br>
+            </center>
+              
+            </div>
+          
+
+            <form action="php/p13.php" method="POST">
+            <div class="login2">
+            
+            </div>
+
+            <div class="login2">
+            <input style=" display: none;" type="text" class="form-control" name="correo" id="correo" value="" required>
+            </div>
+
+            <div class="login2">
+            <input type="text" class="form-control" name="codigo" id="correo" placeholder="Codigo que se le envio al correo"  class="controls"required="" pattern= "[0-9]+"><br><br>
+            </div>
+      
+
+            <div class="login2">
+                <input type="password" class="form-control" name="contrasena" id="correo" placeholder="Nueva contraseña" maxlength= "30" minlength="8" class="controls"required=""><br><br>
+                </div>
+                
+          
+          
+                <div class="login">
+            <div class="login2">
+              <br>
+            <input type="submit"  class="boton" name="enviar" value="Enviar enlace"> <br>
+            </div>
+            
+          </form>
+          <script>
+    const urlParams = new URLSearchParams(window.location.search);
+    const email = urlParams.get('correo');
+
+    document.getElementById('correo').value = email;
+  </script>
+
+  <?php
+
+  if (isset($_POST['correo'])) {
+    // Procesar el correo electrónico enviado
+  }
+
+  ?>
+
+        </div>
+ 
+        </p>
+      </div>
+      </div>
+    </section>
+
+  </main><!-- End #main -->
+
+ <!-- ======= Footer ======= -->
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+  
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="vendor/aos/aos.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="js/main2.js"></script>
+
+</body>
+
+</html>

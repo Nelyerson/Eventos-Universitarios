@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Registrar</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Poppins:300,400,500,700" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="vendor/aos/aos.css" rel="stylesheet">
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/form.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Regna
+  * Updated: Sep 18 2023 with Bootstrap v5.3.2
+  * Template URL: https://bootstrapmade.com/regna-bootstrap-onepage-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center ">
+    <div class="container d-flex justify-content-between align-items-center">
+
+      <div id="logo">
+        <a href="index.html"><img src="assets/img/logo.png" alt=""></a>
+        <!-- Uncomment below if you prefer to use a text logo -->
+        <!--<h1><a href="index.html">Regna</a></h1>-->
+      </div>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto" href="iniciarsesion.php">Iniciar Sesion</a></li>
+          <li><a class="nav-link scrollto active" >Registrarse</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs Section ======= -->
+    <section class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>Registrarse</h2>
+          <ol>
+            <li><a href="index.html">Pagina Principal</a></li>
+            <li>Registro de cuenta</li>
+          </ol>
+        </div>
+
+      </div>
+    </section><!-- End Breadcrumbs Section -->
+
+    <section class="inner-page">
+      <div class="container" data-aos="fade-up">
+        <div class="section-header">
+
+
+        <p>
+          <form action="php/registro5.php" method="POST" enctype="multipart/form-data">
+            
+            <h3 class="titulo">Registro de datos </h3>
+            <h4 class="titulo">(*Obligatorio) </h4>
+
+              <div class="login2">
+                <input type="text" class="form-control" name="username" id="username" placeholder="Nombre de usuario (*)" maxlength= "15" minlength="3" required="" pattern= "[a-z A-Z]+">
+                <br>
+              </div>
+              <div class="login2">
+                <input type="password" class="form-control" name="password" id="password" placeholder="Contraseña (*)" maxlength= "30" minlength="8" required="">
+                <br>
+              </div>
+          
+              <div class="login2">
+                <input type="email" class="form-control" name="email" id="email" placeholder="email (*)" required=""  maxlength= "30" minlength="10">
+                <br>
+              </div>
+              
+              
+              <div class="login2">
+                <input type="text" class="form-control" name="phone" id="phone" placeholder="Numero de Telefono (*)" maxlength= "15" minlength="7" required="" pattern= "[0-9]+">
+                <br>
+              </div>
+
+<center>
+              <div class="login2">
+                <div class="form-group">
+                  <h4 class="titulo">Foto de usuario</h4>
+                  <div>
+               
+                <div>
+                  <div class="form-group">
+                    <input type="file" class="form-label" id="archivo" name="archivo" accept="image/*" required>
+            
+                    <div id="image-preview"></div> </div>
+            </div>
+            
+            <script>
+            const fileInput = document.getElementById('archivo');
+            const imagePreview = document.getElementById('image-preview');
+            
+            fileInput.addEventListener('change', (event) => {
+                const file = event.target.files[0];
+            
+                if (!file || !file.type.startsWith('image/')) {
+                    imagePreview.innerHTML = '';
+                    alert('Porfavor seleccione una imagen.');
+                    return;
+                }
+            
+                const reader = new FileReader();
+            
+                reader.onload = (event) => {
+                    imagePreview.innerHTML = `<img src="${event.target.result}" alt="Preview" style="max-width: 250px; max-height: 250px; display: block; margin: 0 auto;">`;
+                };
+            
+                reader.readAsDataURL(file);
+            });
+            </script>
+
+
+             
+
+
+</center>
+          
+       											
+              <div class="login2">
+                <button type="submit" class="boton" name="registro" value="Crear Usuario">Registrarse</button>
+              </div>
+            </form>
+          <br>
+
+      </div>
+ 
+        </p>
+      </div>
+      </div>
+    </section>
+
+  </main><!-- End #main -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="vendor/aos/aos.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="js/main2.js"></script>
+
+</body>
+
+</html>

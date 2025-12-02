@@ -1,0 +1,113 @@
+.texto input {
+  background-color: #ebebeb;
+  border: none;
+  margin: 8px 0;
+  padding: 10px 15px; /* Corrected padding unit */
+  font-size: 13px;
+  border-radius: 8px;
+  width: 50%;
+  outline: none;
+}
+label {
+    font-size: 13px;
+    margin-top: 5px;
+}
+
+
+
+.contenedor input {
+    background-color: #e7e4ff;
+    border: none;
+    margin: 8px 0;
+    padding: 10px 15px; /* Corrected padding unit */
+    font-size: 15px;
+    border-radius: 8px;
+    width: 150%;
+    outline: none;
+  }
+  label {
+      font-size: 13px;
+      margin-top: 5px;
+  }
+
+  .contenedordos input {
+    background-color: #e7e4ff;
+    border: none;
+    margin: 8px 0;
+    padding: 10px 15px; /* Corrected padding unit */
+    font-size: 15px;
+    border-radius: 8px;
+    width: 150%;
+    outline: none;
+  }
+  label {
+      font-size: 13px;
+      margin-top: 5px;
+  }
+
+  .contenedor, .contenedordos {
+    display: inline-block;
+    margin-right: 100px; /* Opcional: añade espacio entre los elementos */
+  }
+
+
+  
+.rueda input {
+  background-color: #e7e4ff;
+  border: none;
+  margin: 8px 0;
+  padding: 10px 15px; /* Corrected padding unit */
+  font-size: px;
+  border-radius: 8px;
+  width: 50%;
+  outline: none;
+  color: #777895;
+}
+label {
+    font-size: 13px;
+    margin-top: 5px;
+}
+
+.ruedados input {
+  background-color: #e7e4ff;
+  border: none;
+  margin: 8px 0;
+  padding: 10px 15px; /* Corrected padding unit */
+  font-size: 15px;
+  border-radius: 8px;
+  width: 50%;
+  outline: none;
+  color: #777895;
+}
+label {
+    font-size: 13px;
+    margin-top: 5px;
+}
+
+.rueda, .ruedados {
+  display: inline-block;
+
+  
+}
+
+  select.select { /* Utiliza select.select para mayor especificidad */
+    background-color:#e7e4ff;
+    border: none;
+    margin: 8px 0;
+    padding: 10px 15px; /* Corrected padding unit */
+    font-size: 13px;
+    border-radius: 8px;
+    width: 20%;
+    outline: none;
+    font-size: 15px;
+    color: #777895;
+    
+  }
+
+  input[type="date"] {
+    color: #777895;
+
+  }
+  
+
+  

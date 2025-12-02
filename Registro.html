@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Iniciar Sesion</title>
+  <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.2.0/css/all.css'>
+<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.2.0/css/fontawesome.css'><link rel="stylesheet" href="style2.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="container">
+	<div class="screen">
+		<div class="screen__content">
+			
+			<form class="login" action="php/registro5.php" method="POST" enctype="multipart/form-data"> 
+			
+
+				<div class="login__field">
+					
+					<i class="login__icon fas fa-user"></i>
+					<input type="text" class="login__input" placeholder="Nombre de Usuario" name="username" id="username" maxlength= "15" minlength="3" required="" pattern= "[a-z A-Z]+">
+				</div>
+				<div class="login__field">
+					<i class="login__icon fas fa-lock"></i>
+					<input type="password" class="login__input" placeholder="Contraseña" name="password" id="password" maxlength= "30" minlength="8" required="">
+				</div>
+				
+				<div class="login__field">
+					
+					<i class="login__icon fas fa-user"></i>
+					<input type="email" class="login__input" placeholder="Email" name="email" id="email" required=""  maxlength= "30" minlength="10">
+				</div>
+				<div class="login__field">
+					<i class="login__icon fas fa-lock"></i>
+					<input type="text" class="login__input" placeholder="Telefono" name="phone" id="phone" maxlength= "15" minlength="7" required="" pattern= "[0-9]+"> 
+				</div>
+
+				<button class="button login__submit" name="registro" value="Iniciar sesion " type="submit">
+					<span class="button__text">Registrarse</span>
+					<i class="button__icon fas fa-chevron-right"></i>
+					
+				</button>		
+
+				
+				
+				
+											  
+			</form>
+			
+		</div>
+		<div class="screen__background">
+			<span class="screen__background__shape screen__background__shape4"></span>
+			<span class="screen__background__shape screen__background__shape3"></span>		
+			<span class="screen__background__shape screen__background__shape2"></span>
+			<span class="screen__background__shape screen__background__shape1"></span>
+		</div>		
+	</div>
+</div>
+<!-- partial -->
+  
+</body>
+</html>
